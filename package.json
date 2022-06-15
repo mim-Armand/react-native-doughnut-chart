@@ -1,6 +1,6 @@
 {
   "name": "react-native-donut-chart",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -26,5 +26,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "typings": "./index.d.ts"
 }
