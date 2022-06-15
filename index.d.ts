@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-declare class Donut extends React.Component<DonutProps, any> {}
+// export declare class Donut extends React.Component<DonutProps, any> {}
+export declare const Donut: React.SFC<DonutProps>;
 
 export interface DonutProps {
   data: [data_point];
