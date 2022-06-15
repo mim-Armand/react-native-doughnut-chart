@@ -3,7 +3,7 @@
 
 This is a simple donut chart that accepts a data object like the following:
 ```js
-[
+const data = [
   {
     value: 1,
     color: 'brown',
@@ -22,6 +22,14 @@ This is a simple donut chart that accepts a data object like the following:
     color: 'blue',
   },
 ]
+
+// ...
+```
+Then
+```jsx
+import {Donut} from 'react-native-dinut-chart';
+
+<Donut data={data}/>
 ```
 
 This was a fast and quick hack to check the feasibility, more options can and will become available and a lot of improvements can be made.
@@ -30,4 +38,4 @@ This was a fast and quick hack to check the feasibility, more options can and wi
 
 Here is a screenshot of the randomized sample data:
 
-<img src="screenshot.png" alt="Simulator screenshot" width="444"/>
+<img src="https://raw.githubusercontent.com/mim-Armand/react-native-doughnut-chart/main/screenshot.png" alt="Simulator screenshot" width="444"/>
