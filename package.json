@@ -1,7 +1,7 @@
 {
-  "name": "react_native_doughnut_chart",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-donut-chart",
+  "version": "0.0.3",
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -9,12 +9,12 @@
     "test": "jest",
     "lint": "eslint ."
   },
-  "dependencies": {
-    "react": "17.0.2",
-    "react-native": "0.68.2",
+  "peerDependencies": {
     "react-native-svg": "^12.3.0"
   },
   "devDependencies": {
+    "react": "17.0.2",
+    "react-native": "0.68.2",
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",

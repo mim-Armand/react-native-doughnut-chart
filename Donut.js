@@ -49,6 +49,7 @@ export default function Donut(props = []) {
             strokeLinejoin="round"
             strokeOpacity=".1"
           />
+
           {props.data.map( (p, i) => {
             const totalGap = gap * props.data.length;
             const startOffset = (state.circumference - totalGap);
