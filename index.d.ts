@@ -4,12 +4,11 @@ import * as React from 'react';
 export declare const Donut: React.SFC<DonutProps>;
 
 export interface DonutProps {
-  data: [data_point];
-}
-
-interface data_point {
-  value: string;
-  color: string;
+  data: {
+    value: number;
+    color: string;
+  }[];
+  radius?: number;
 }
 
 export default Donut;

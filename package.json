@@ -1,6 +1,6 @@
 {
   "name": "react-native-donut-chart",
-  "version": "0.0.7",
+  "version": "0.0.11",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
@@ -11,6 +11,8 @@
   },
   "peerDependencies": {
     "react-native-svg": "^12.3.0"
+  },
+  "dependencies": {
   },
   "devDependencies": {
     "react": "17.0.2",
@@ -26,6 +28,11 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "homepage": "https://github.com/mim-Armand/react-native-doughnut-chart#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mim-Armand/react-native-doughnut-chart.git"
   },
   "typings": "./index.d.ts"
 }
