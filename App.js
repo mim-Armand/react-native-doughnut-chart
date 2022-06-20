@@ -37,7 +37,7 @@ const App: () => Node = () => {
         value: Math.round(Math.random() * 100),
       }));
       setData(newData);
-    }, 1999);
+    }, 3999);
     return () => {
       clearInterval(interval);
     };
@@ -53,6 +53,10 @@ const App: () => Node = () => {
           alignItems: 'center',
         }}>
         <Donut data={data} radius={120} strokeWidth={15} gap={9} bgStrokeColor={'gray'} bgStrokeOpacity={'.1'} bgStrokePadding={10}/>
+        <View style={{marginTop: 20, width: '100%'}} />
+        <Donut data={data} radius={90} strokeWidth={9} gap={3} bgStrokeColor={'lightgray'} bgStrokeOpacity={'.9'} bgStrokePadding={0}/>
+        <View style={{marginTop: 20, width: '100%'}} />
+        <Donut data={data} radius={120} strokeWidth={36} gap={12} bgStrokeColor={'navy'} bgStrokeOpacity={'.3'} bgStrokePadding={6}/>
       </View>
     </View>
   );
