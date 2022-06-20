@@ -12,6 +12,7 @@ export interface DonutProps {
   fill?: string;
   strokeWidth?: number;
   strokeLinejoin?: string;
+  gap?: number;
 }
 
 export default Donut;
