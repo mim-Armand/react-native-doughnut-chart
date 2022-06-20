@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "react_native_doughnut_chart.app"
-               BlueprintName = "react_native_doughnut_chart"
-               ReferencedContainer = "container:react_native_doughnut_chart.xcodeproj">
+               BuildableName = "react-native-donut-chart.app"
+               BlueprintName = "react-native-donut-chart"
+               ReferencedContainer = "container:react-native-donut-chart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "react_native_doughnut_chartTests.xctest"
-               BlueprintName = "react_native_doughnut_chartTests"
-               ReferencedContainer = "container:react_native_doughnut_chart.xcodeproj">
+               BuildableName = "react-native-donut-chartTests.xctest"
+               BlueprintName = "react-native-donut-chartTests"
+               ReferencedContainer = "container:react-native-donut-chart.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "react_native_doughnut_chart.app"
-            BlueprintName = "react_native_doughnut_chart"
-            ReferencedContainer = "container:react_native_doughnut_chart.xcodeproj">
+            BuildableName = "react-native-donut-chart.app"
+            BlueprintName = "react-native-donut-chart"
+            ReferencedContainer = "container:react-native-donut-chart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "react_native_doughnut_chart.app"
-            BlueprintName = "react_native_doughnut_chart"
-            ReferencedContainer = "container:react_native_doughnut_chart.xcodeproj">
+            BuildableName = "react-native-donut-chart.app"
+            BlueprintName = "react-native-donut-chart"
+            ReferencedContainer = "container:react-native-donut-chart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

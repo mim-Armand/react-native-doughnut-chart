@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface react_native_doughnut_chartTests : XCTestCase
+@interface react-native-donut-chartTests : XCTestCase
 
 @end
 
-@implementation react_native_doughnut_chartTests
+@implementation react-native-donut-chartTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

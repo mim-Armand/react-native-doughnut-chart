@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '13.0'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'react_native_doughnut_chart' do
+target 'react-native-donut-chart' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -19,7 +19,7 @@ target 'react_native_doughnut_chart' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'react_native_doughnut_chartTests' do
+  target 'react-native-donut-chartTests' do
     inherit! :complete
     # Pods for testing
   end

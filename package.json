@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "react-native-svg": "^12.3.0"
   },
   "dependencies": {
+    "react-native-svg": "^12.3.0"
   },
   "devDependencies": {
     "react": "17.0.2",
@@ -29,10 +29,10 @@
   "jest": {
     "preset": "react-native"
   },
-  "homepage": "https://github.com/mim-Armand/react-native-doughnut-chart#readme",
+  "homepage": "https://github.com/mim-Armand/react-native-donut-chart#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mim-Armand/react-native-doughnut-chart.git"
+    "url": "https://github.com/mim-Armand/react-native-donut-chart.git"
   },
   "typings": "./index.d.ts"
 }

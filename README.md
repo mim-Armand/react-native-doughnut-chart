@@ -38,4 +38,4 @@ This was a fast and quick hack to check the feasibility, more options can and wi
 
 Here is a screenshot of the randomized sample data:
 
-<img src="https://raw.githubusercontent.com/mim-Armand/react-native-doughnut-chart/main/screenshot.png" alt="Simulator screenshot" width="444"/>
+<img src="https://raw.githubusercontent.com/mim-Armand/react-native-donut-chart/main/screenshot.png" alt="Simulator screenshot" width="444"/>

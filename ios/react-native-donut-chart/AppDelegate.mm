@@ -41,7 +41,7 @@
   bridge.surfacePresenter = _bridgeAdapter.surfacePresenter;
 #endif
 
-  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"react_native_doughnut_chart", nil);
+  UIView *rootView = RCTAppSetupDefaultRootView(bridge, @"react-native-donut-chart", nil);
 
   if (@available(iOS 13.0, *)) {
     rootView.backgroundColor = [UIColor systemBackgroundColor];

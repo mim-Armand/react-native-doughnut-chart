@@ -1,4 +1,4 @@
-package com.react_native_doughnut_chart.newarchitecture.modules;
+package com.react-native-donut-chart.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
@@ -41,7 +41,7 @@ public class MainApplicationTurboModuleManagerDelegate
     if (!sIsSoLibraryLoaded) {
       // If you change the name of your application .so file in the Android.mk file,
       // make sure you update the name here as well.
-      SoLoader.loadLibrary("react_native_doughnut_chart_appmodules");
+      SoLoader.loadLibrary("react-native-donut-chart_appmodules");
       sIsSoLibraryLoaded = true;
     }
   }

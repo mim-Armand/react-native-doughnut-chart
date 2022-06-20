@@ -18,6 +18,7 @@ export default function Donut(props = []) {
   });
 
   useEffect(() => {
+    if(!data) return
     const newMax = data.reduce((p, c) => {
       return p + c.value;
     }, 0);
@@ -47,7 +48,7 @@ export default function Donut(props = []) {
             strokeOpacity=".1"
           />
 
-          {data.map((p, i) => {
+          {!!data && data.map((p, i) => {
             const totalGap = gap * data.length;
             const startOffset = state.circumference - totalGap;
             const endOffset = (p.value * state.circumference) / state.max;

@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:react_native_doughnut_chart.xcodeproj">
+      location = "group:react-native-donut-chart.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:react-native-donut-chart.xcodeproj">
    </FileRef>
 </Workspace>

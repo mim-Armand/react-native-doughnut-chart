@@ -1,4 +1,4 @@
-package com.react_native_doughnut_chart.newarchitecture;
+package com.react-native-donut-chart.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.react_native_doughnut_chart.BuildConfig;
-import com.react_native_doughnut_chart.newarchitecture.components.MainComponentsRegistry;
-import com.react_native_doughnut_chart.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.react-native-donut-chart.BuildConfig;
+import com.react-native-donut-chart.newarchitecture.components.MainComponentsRegistry;
+import com.react-native-donut-chart.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
