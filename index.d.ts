@@ -9,6 +9,9 @@ export interface DonutProps {
     color: string;
   }[];
   radius?: number;
+  fill?: string;
+  strokeWidth?: number;
+  strokeLinejoin?: string;
 }
 
 export default Donut;

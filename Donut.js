@@ -4,8 +4,7 @@ import Svg, {G, Circle} from 'react-native-svg';
 import {useEffect, useState} from 'react';
 
 export default function Donut(props = []) {
-  const {data, radius = 80} = props;
-  const strokeWidth = 10;
+  const {data, radius = 80, fill = "transparent", strokeWidth = 10, strokeLinejoin = "round"} = props;
   const color = 'green';
   const gap = 3;
   const halfCircle = radius + strokeWidth;
@@ -15,10 +14,15 @@ export default function Donut(props = []) {
     max: 100,
     circumference: 33,
     radius: 80,
+    fill: 'transparent',
+    strokeWidth: 10,
+    strokeLinejoin: "round"
   });
 
   useEffect(() => {
-    if(!data) return
+    if (!data) {
+      return;
+    }
     const newMax = data.reduce((p, c) => {
       return p + c.value;
     }, 0);
@@ -27,6 +31,9 @@ export default function Donut(props = []) {
       max: newMax,
       circumference,
       radius,
+      fill,
+      strokeWidth,
+      strokeLinejoin,
     });
   }, [data, props, radius]);
 
@@ -41,10 +48,10 @@ export default function Donut(props = []) {
             cx="50%"
             cy="50%"
             r={state.radius}
-            fill="transparent"
+            fill={state.fill}
             stroke={color}
-            strokeWidth={strokeWidth}
-            strokeLinejoin="round"
+            strokeWidth={state.strokeWidth}
+            strokeLinejoin={state.strokeLinejoin}
             strokeOpacity=".1"
           />
 
@@ -62,12 +69,12 @@ export default function Donut(props = []) {
                 cx="50%"
                 cy="50%"
                 r={state.radius}
-                originX={state.radius + strokeWidth}
-                originY={state.radius + strokeWidth}
+                originX={state.radius + state.strokeWidth}
+                originY={state.radius + state.strokeWidth}
                 rotation={currentRotation}
                 stroke={p.color}
-                strokeWidth={strokeWidth}
-                strokeLinecap="round"
+                strokeWidth={state.strokeWidth}
+                strokeLinecap={state.strokeLinejoin}
                 strokeDashoffset={startOffset + endOffset}
                 strokeDasharray={state.circumference}
                 // fill="red"
