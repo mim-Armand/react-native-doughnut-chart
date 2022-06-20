@@ -13,7 +13,7 @@ class MainComponentsRegistry
  public:
   // Adapt it to the package you used for your Java class.
   constexpr static auto kJavaDescriptor =
-      "Lcom/react_native_doughnut_chart/newarchitecture/components/MainComponentsRegistry;";
+      "Lcom/react-native-donut-chart/newarchitecture/components/MainComponentsRegistry;";
 
   static void registerNatives();
 

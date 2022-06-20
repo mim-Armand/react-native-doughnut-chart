@@ -1,4 +1,4 @@
-package com.react_native_doughnut_chart.newarchitecture.components;
+package com.react-native-donut-chart.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

@@ -4,10 +4,17 @@ import Svg, {G, Circle} from 'react-native-svg';
 import {useEffect, useState} from 'react';
 
 export default function Donut(props = []) {
-  const {data, radius = 80} = props;
-  const strokeWidth = 10;
-  const color = 'green';
-  const gap = 3;
+  const {
+    data,
+    radius = 80,
+    fill = 'transparent',
+    strokeWidth = 10,
+    strokeLinejoin = 'round',
+    gap = 3,
+    bgStrokeColor = 'green',
+    bgStrokeOpacity = '.1',
+    bgStrokePadding = 0,
+  } = props;
   const halfCircle = radius + strokeWidth;
   let lastOffsetRotation = 0;
 
@@ -15,9 +22,19 @@ export default function Donut(props = []) {
     max: 100,
     circumference: 33,
     radius: 80,
+    fill: 'transparent',
+    strokeWidth: 10,
+    strokeLinejoin: 'round',
+    gap: 3,
+    bgStrokeColor: 'green',
+    bgStrokeOpacity: '.1',
+    bgStrokePadding: 0,
   });
 
   useEffect(() => {
+    if (!data) {
+      return;
+    }
     const newMax = data.reduce((p, c) => {
       return p + c.value;
     }, 0);
@@ -26,6 +43,13 @@ export default function Donut(props = []) {
       max: newMax,
       circumference,
       radius,
+      fill,
+      strokeWidth,
+      strokeLinejoin,
+      gap,
+      bgStrokeColor,
+      bgStrokeOpacity,
+      bgStrokePadding
     });
   }, [data, props, radius]);
 
@@ -40,15 +64,15 @@ export default function Donut(props = []) {
             cx="50%"
             cy="50%"
             r={state.radius}
-            fill="transparent"
-            stroke={color}
-            strokeWidth={strokeWidth}
-            strokeLinejoin="round"
-            strokeOpacity=".1"
+            fill={state.fill}
+            stroke={state.bgStrokeColor}
+            strokeWidth={state.strokeWidth + bgStrokePadding}
+            strokeLinejoin={state.strokeLinejoin}
+            strokeOpacity={state.bgStrokeOpacity}
           />
 
-          {data.map((p, i) => {
-            const totalGap = gap * data.length;
+          {!!data && data.map((p, i) => {
+            const totalGap = state.gap * data.length;
             const startOffset = state.circumference - totalGap;
             const endOffset = (p.value * state.circumference) / state.max;
             const currentRotation =
@@ -61,12 +85,12 @@ export default function Donut(props = []) {
                 cx="50%"
                 cy="50%"
                 r={state.radius}
-                originX={state.radius + strokeWidth}
-                originY={state.radius + strokeWidth}
+                originX={state.radius + state.strokeWidth}
+                originY={state.radius + state.strokeWidth}
                 rotation={currentRotation}
                 stroke={p.color}
-                strokeWidth={strokeWidth}
-                strokeLinecap="round"
+                strokeWidth={state.strokeWidth}
+                strokeLinecap={state.strokeLinejoin}
                 strokeDashoffset={startOffset + endOffset}
                 strokeDasharray={state.circumference}
                 // fill="red"
