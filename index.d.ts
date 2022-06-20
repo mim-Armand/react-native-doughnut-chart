@@ -13,6 +13,9 @@ export interface DonutProps {
   strokeWidth?: number;
   strokeLinejoin?: string;
   gap?: number;
+  bgStrokeColor?: string;
+  bgStrokeOpacity?: string;
+  bgStrokePadding?: number;
 }
 
 export default Donut;

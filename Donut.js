@@ -4,8 +4,17 @@ import Svg, {G, Circle} from 'react-native-svg';
 import {useEffect, useState} from 'react';
 
 export default function Donut(props = []) {
-  const {data, radius = 80, fill = 'transparent', strokeWidth = 10, strokeLinejoin = 'round', gap = 3} = props;
-  const color = 'green';
+  const {
+    data,
+    radius = 80,
+    fill = 'transparent',
+    strokeWidth = 10,
+    strokeLinejoin = 'round',
+    gap = 3,
+    bgStrokeColor = 'green',
+    bgStrokeOpacity = '.1',
+    bgStrokePadding = 0,
+  } = props;
   const halfCircle = radius + strokeWidth;
   let lastOffsetRotation = 0;
 
@@ -17,6 +26,9 @@ export default function Donut(props = []) {
     strokeWidth: 10,
     strokeLinejoin: 'round',
     gap: 3,
+    bgStrokeColor: 'green',
+    bgStrokeOpacity: '.1',
+    bgStrokePadding: 0,
   });
 
   useEffect(() => {
@@ -35,6 +47,9 @@ export default function Donut(props = []) {
       strokeWidth,
       strokeLinejoin,
       gap,
+      bgStrokeColor,
+      bgStrokeOpacity,
+      bgStrokePadding
     });
   }, [data, props, radius]);
 
@@ -50,10 +65,10 @@ export default function Donut(props = []) {
             cy="50%"
             r={state.radius}
             fill={state.fill}
-            stroke={color}
-            strokeWidth={state.strokeWidth}
+            stroke={state.bgStrokeColor}
+            strokeWidth={state.strokeWidth + bgStrokePadding}
             strokeLinejoin={state.strokeLinejoin}
-            strokeOpacity=".1"
+            strokeOpacity={state.bgStrokeOpacity}
           />
 
           {!!data && data.map((p, i) => {
