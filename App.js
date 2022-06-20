@@ -52,7 +52,7 @@ const App: () => Node = () => {
           flexWrap: 'wrap',
           alignItems: 'center',
         }}>
-        <Donut data={data} radius={120} />
+        <Donut data={data} radius={120} strokeWidth={15} gap={9} bgStrokeColor={'gray'} bgStrokeOpacity={'.1'} bgStrokePadding={10}/>
       </View>
     </View>
   );

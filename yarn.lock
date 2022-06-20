@@ -5577,7 +5577,7 @@ react-native-codegen@^0.0.17:
 
 "react-native-donut-chart@https://github.com/mim-Armand/react-native-doughnut-chart.git#next":
   version "0.0.11"
-  resolved "https://github.com/mim-Armand/react-native-doughnut-chart.git#54c72a4bf142170643bf923c78d4eb6c1a29af1f"
+  resolved "https://github.com/mim-Armand/react-native-doughnut-chart.git#4b7bf615332bec69980e57225634ed7913a2a84a"
   dependencies:
     react-native-svg "^12.3.0"
 
