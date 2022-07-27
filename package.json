@@ -1,6 +1,9 @@
 {
   "name": "react-native-donut-chart",
-  "version": "0.0.14",
+  "author": "mim_Armand",
+  "license": "None",
+  "description": "This is a nice looking donut chart!",
+  "version": "0.0.16",
   "private": false,
   "scripts": {
     "android": "react-native run-android",
