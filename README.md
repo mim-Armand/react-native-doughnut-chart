@@ -27,7 +27,7 @@ const data = [
 ```
 Then
 ```jsx
-import {Donut} from 'react-native-dinut-chart';
+import {Donut} from 'react-native-donut-chart';
 
 <Donut data={data}/>
 ```
